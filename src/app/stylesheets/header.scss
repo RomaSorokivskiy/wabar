@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+[data-theme="dark"] {
+  & header {
+    background-color: #3C486B;
+    svg {
+      path {
+        fill: #73BBC9;
+      }
+    }
+  }
+}
+[data-theme="light"] {
+  & header {
+    background-color: #73BBC9;
+    svg {
+      path {
+        fill: #F45050;
+      }
+    }
+  }
+}

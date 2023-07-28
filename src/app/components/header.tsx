@@ -1,12 +1,20 @@
 import Link from 'next/link'
-import Image from "next/image";
 import Logo from "../img/logo.svg"
+
+import ThemeSwitcher from "@/app/components/themeSwitcher";
+import UserAuth from "@/app/components/userAuth";
+
+import "../stylesheets/header.scss"
 const Header = () => {
     return (
         <header>
-            <Link href={"/"}>
-                <Image src={Logo} alt={"Logo"}/>
-            </Link>
+            <div className="container">
+                <Link href={"/"}>
+                    <Logo/>
+                </Link>
+                <UserAuth/>
+                <ThemeSwitcher/>
+            </div>
         </header>
     )
 }
